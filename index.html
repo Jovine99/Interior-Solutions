@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
     <div class="container">
@@ -22,16 +24,28 @@
                 <div class="nav-list">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About us</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars" aria-hidden="true" ></i>
+                </div>
+                <div class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                </div>
             </nav>
-            <div id="main">
+            
+            <div id="main" data-aos="fade-right"  data-aos-duration="500" data-aos-easing="linear"
+     data-aos-anchor-placement="center-center" data-aos-once="true">
                 <div id="hero">
-                    <div id="slogan">
+                    <div id="slogan" >
                         Modern Design Solutions
                     </div>
                     <div id="branding">
@@ -43,12 +57,16 @@
                 </div>
             </div>
         </header>
-        <div id="description">
-            <div id="comment1"> Interior design doesn't have to be</div>
-           <div id="comment2"> Expensive or complicated! it should be</div>
+        <div id="description" >
+            <div id="comment1" data-aos="fade-right" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="900" data-aos-easing="linear"> Interior design doesn't have to be</div>
+           <div id="comment2" data-aos="fade-right" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="900" data-aos-easing="linear"> Expensive or complicated! it should be</div>
              
-               <div id="comment3">smart and friendly.</div>
-            <div id="designers">
+               <div id="comment3" data-aos="fade-right" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="900" data-aos-easing="linear">smart and friendly.</div>
+            <div id="designers" data-aos="fade-up" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="900" data-aos-easing="linear">
               <img src="./images/d.jpg" alt="">
               <div id="info">
                 <div class="title">
@@ -58,11 +76,13 @@
               </div>
             </div>
             <div id="award">
-              <img src="./images/image.jpg"alt>
-              <div id="win">
+              <img src="./images/image.jpg"alt data-aos="fade-right" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="1000" data-aos-easing="linear">
+              <div id="win" data-aos="flip-up" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="1000" data-aos-easing="linear">
                 <div id="linetext">Our Recent</div>
-                <div id="headline">award winning project</div>
-                <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Minima omnis deserunt sed <br>sapiente! Cum hic omnis ducimus dignissimos! Ab porro vel iure <br>corporis ipsa quisquam, quaerat et provident repudiandae ut!</p>
+                <div id="headline" >award winning project</div>
+                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Minima omnis deserunt sed <br>sapiente! Cum hic omnis ducimus dignissimos! Ab porro vel iure <br>corporis ipsa quisquam, quaerat et provident repudiandae ut!</p>
                 
                     <ul>
                         <li>Lorem ipsum dolor sit amet</li>
@@ -86,7 +106,8 @@
                     buiding planning
                 </div>
             </div> -->
-            <section id="why">
+            <section id="why" data-aos="fade-right" data-aos-once="true"
+     data-aos-anchor-placement="center-center"  data-aos-duration="1000" data-aos-easing="linear">
                 <div class="title-section">
                     <p>Every Space count</p>
                     <div id="t">
@@ -162,10 +183,10 @@
                         <div class="footer-col">
                             <h4>Our company</h4>
                             <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">projects</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="../about.html">About us</a></li>
+                                <li><a href="">projects</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                         <div class="footer-col">
@@ -193,6 +214,29 @@
         
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init({
+            duration:1000,
+            once:true
+        }
+           
+
+        );
+        const toggleBtn = querySelector('.toggle-btn')
+        const toggleBtnicon = querySelector('.toggle-btn i')
+        const dropdownMenu = querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function(){
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+
+            toggleBtnicon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars' 
+        }
+    </script>
     
 </body>
 </html>
