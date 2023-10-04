@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+    
     <div class="container">
         <span class="big-circle"></span>
         <img src="./images/shape.jpg" class="square" alt="">
@@ -53,7 +55,7 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form action="">
+                <form action="index.php" method="POST">
                     <h3 class="title">Contact Us</h3>
                     <div class="input-container ">
                         <input type="text" name="name" class="input">
@@ -68,9 +70,9 @@
                     </div>
 
                     <div class="input-container">
-                        <input type="tel" name="phone" class="input">
-                        <label for="">Phone</label>
-                        <span>Phone</span>
+                        <input type="text" name="subject" class="input">
+                        <label for="">Subject</label>
+                        <span>Subject</span>
                     </div>
 
                     <div class="input-container textarea">
@@ -78,7 +80,7 @@
                         <label for="">Message</label>
                         <span>Message</span>
                     </div>
-                    <input type="submit" value="send" class="btn">
+                    <input type="submit" value="send" class="btn" name="submit">
                 </form>
             </div>
         </div>
