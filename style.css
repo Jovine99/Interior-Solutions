@@ -418,6 +418,67 @@ li{
     padding-top: 20px;
    
 }
+/* project-section */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap:20px;
+    margin:30px;
+   
+ }
+ .projects .image{
+     flex: 1 1 41;
+   max-width: 100%; 
+   padding: 10px;
+ }
+ .projects .image img{
+     width: 100%;
+     height:200px;
+     object-fit: contain;
+ }
+  .projects .info{
+     flex: 1 1 41;
+     width:50%; 
+   padding: 10px; 
+   box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.1);
+   background-color:#f2f2f2;
+ }
+ .projects .info span{
+     font-size:26px;
+     margin-left:10px
+     /* color:#A93226; */
+    
+ }
+ .projects .info p{
+     font-size:18px;
+     display:block;
+     padding:10px;
+     color:#666;
+     letter-spacing: .2px;
+     word-spacing: 3px;
+ 
+ }
+ .projects .info .button{
+    background:#A93226;
+    transition-property: background-color, color;
+    display: inline-block;
+    transition: 3s ease;
+    
+    letter-spacing: 1px;
+    margin-left:10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* height: 60%; */
+    padding: 10px 10px;
+ }
+ .projects .info .button a{
+    color:#fff;
+ }
+
+
+/* end-project-section */
 .footer{
     background-color: #01021B;
     margin-top: 60px;
@@ -504,20 +565,24 @@ ul{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    gap:20px
 }
 
 .content-section{
     
     flex:1 1 41rem;
-    padding: 3rem;
+    padding:10px;
 }
 .image-section{
-    flex:1 1 41rem
+    flex:1 1 41rem;
+   padding:20px
 }
 .image-section img{
     width: 100%;
-    /* height: auto; */
+    height: 300px;
     margin-left: 20px;
+    object-fit: contain;
+    
    
 }
 .content-section h2{
