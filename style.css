@@ -117,7 +117,7 @@ a{
     align-items:center;
     gap:30px;
     justify-content: center;
-    padding-top: 40px; 
+    padding-top:30px;
     background:#f8f8f8
     
 }
@@ -697,7 +697,7 @@ form {
     top: 1rem;
     transform: translateY(0);
   }
-  .btn{
+  .form-btn{
     padding: 0.6rem 1.3rem;
     background-color:#fff;
     border: 2px solid #fafafa;
@@ -711,7 +711,7 @@ form {
     margin:0;
 
   }
-  .btn:hover{
+  .form-btn:hover{
     background-color: transparent;
     color: #fff;
   }
@@ -1175,10 +1175,7 @@ text-decoration: none;
       line-height: 30px;
     }
   
-    .icon {
-      width: 23px;
-    }
-  
+    
     .input {
       padding: 0.45rem 1.2rem;
     }
