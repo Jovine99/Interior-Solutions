@@ -7,11 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo_header">
+          <a href="#" class="logo">Interior Solutions</a>
+          <button class="navbar_toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
     
-    <div class="container">
+        
+        <ul class="main_nav">
+          <li>
+            <a href="#" class="nav_links">Home</a>
+          </li>
+          <li>
+            <a href="projects.html" class="nav_links">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav_links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav_links">Contact</a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav_links">Blog</a>
+          </li>
+        </ul>
+          
+      </nav>
+      
+    <div class="form-container">
         <span class="big-circle"></span>
         <img src="./images/shape.jpg" class="square" alt="">
         <div class="form">
@@ -88,6 +117,40 @@
 
     
     <script src="app.js"></script>
+    <script src="menubar.js"></script>
 
+<footer  class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col">
+                <h4>Our company</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+               <div class="social-links">
+                <a href="https://facebok.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+            </div>
+            <div class="footer-col">
+                <h4>contact info</h4>
+                <ul>
+                    <li><a href="#">info@interiorsolns.com</a></li>
+                    <li><a href="#">+254 712 876 347</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+</footer>
 </body>
 </html>
